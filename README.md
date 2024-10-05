@@ -34,9 +34,32 @@ Several SQL queries were executed to:
 - Calculate the total number of cases for each crime across all states.
 - Determine the top 5 states with the highest crime rates for each category.
 - Compare states across multiple crime categories (e.g., states with high rape cases and dowry deaths).
-  Example SQL Query:
-  ```
+
+  #### Example SQL Query:
+  ```sql
   select Year,Rape as Highest_reported_rape_cases from crime_against_women.`crimes_against_women_2001-2014`
   order by Rape desc
   limit 10;
   ```
+### Step 3: Tableau Visualization
+The cleaned and aggregated data was imported into Tableau for visualization. Some of the key Tableau dashboards include:
+- State-wise Crime pie chart and bar chart: Visualizing the geographic distribution of crimes across India.
+- Top 10 States for Rape, Dowry Deaths, Domestic Violence: Line chart and bar chart showcasing the states with the highest crime rates.
+- Year-wise Crime Trends (2001-2014): Area graphs to show how crime rates evolved over the years.
+- Interactive Dashboards: Users can filter by state or crime type to explore the data more deeply.
+### Step 4: Findings and Insights
+Through the SQL analysis and Tableau visualizations, several insights were identified:
+
+- States like West Bengal and Madhya Pradesh consistently reported the highest number of cases across multiple categories (e.g., rape, dowry deaths).
+- Rape cases saw a notable increase in specific states over the years.
+- Dowry deaths remained alarmingly high in certain regions.
+- States that reported high numbers of importation of girls also had significant rape cases, indicating potential trafficking and exploitation.
+## Project Findings
+- Top 10 Highest Reported Rape Cases (2001-2014): The state of Madhya Pradesh reported the highest number of rape cases during the 14-year period.
+- Top 10 Highest Dowry Deaths (2001-2014): The state of Uttar Pradesh led in dowry-related deaths.
+- Top 5 States for Domestic Violence: West Bengal had the highest domestic violence cases reported.
+- States Appearing in Multiple Lists:
+  - Madhya Pradesh and West Bengal featured in both the top 10 for "Maximum Rape Cases" and "Maximum Importation of Girls Cases."
+  - Madhya Pradesh, West Bengal and Uttar Pradesh appeared in the top 5 for both "Rape Cases" and "Dowry Deaths."
+## Conclusion
+The project provides a detailed analysis of crime against women in India between 2001 and 2014. It highlights concerning trends in several states and emphasizes the need for stronger protective measures and social reforms.
